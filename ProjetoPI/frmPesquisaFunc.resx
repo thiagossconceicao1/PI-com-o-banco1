@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnLimpar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnLimpar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHcSURBVFhH7dfP
+        K99xAMfx71ghabPDojGHlVDbDit2UDu4cJHcdtpfIFu5yMGPUnZYJuRilzWlNHNWLnIS5aCcTbliUvNr
+        PF98X/X26Svfvvv6KH1f9YjPC2/vz+fzfn98JG4hD/Ad+xhSEXde4ixQiljzFuEEKhBrHkJnbXmINVoD
+        hYHYc+e3IDeB3ARyE6jH38Az3N9UoiYDZchK5hHe73R9Q1Zy5xP4hT8ZGMP9SDXeJD1SQergTl5AeQp3
+        VSqykVX4vjaqIL8R3u8ZKF1wN6EiG9mEB9XVUA7gTn5A6YG7YRXRFOEx9EqVTgpwDA2ojzouTx6HJqEM
+        wF3Kt2VtDX2x6eLo5ryCB1xXQfSz7mwcyme461MRTS/WoGd5mNfQwoqmAx5wRAXphzv7AuUr3HWrSDen
+        2Lr89Erm4AGbVZAluLNBKFp47j6pSDc/4fvo5GMHGkyLTuunBEfJLtQJZRbu3qv4n7TAg02pIB/gLtQG
+        ZRnuvGVTph0f4QdLqoRn06CCLMJdSA8eZRvunqu4LgvQN/kJFo3+lPpS66yUWvyDf4GdoBhPgm4P+ufl
+        2tx0BbSHPVirCuItHLUB5R3c6UplHE1qFxpoBToTvZQcJruoaSjhlh1VcZlE4hzbAeUtyb2b5QAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="btnLimpar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 361</value>
+  </data>
+  <data name="btnLimpar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 62</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnLimpar.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnLimpar.Text" xml:space="preserve">
+    <value>&amp;Limpar</value>
+  </data>
+  <data name="btnLimpar.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnLimpar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Name" xml:space="preserve">
+    <value>btnLimpar</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnPesquisar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPesquisar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        pgAADqYBh9ypbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKWSURBVFhHtdZP
+        SxVhFMfxAa1cCb6AFu1aiIFhYO6yP25zEbbpz6ZF0DKEwI2JtCpfQISL9B0UuhF3gSXUW7gEESUtokwL
+        bt9fw8kzzz0zdwbGH3wu3vE8Z56ZOzPPZN1utxQ5hUncx3Ps4jve4wUeYApD0fg64o1ZNoh7+Aht6OcT
+        NMkTUb8qvRuy7DTewe+grg84k/asUvySZRfwGb7pb2xjBXegU34bz7CFQ/j6r7jo+1Y5+iM/8nTnOqJx
+        PyBFxqBrw4/TTzcS1afyj/w396f9DxZxMh0QIRq/AH821qPaVP6RX3A2UBbTwjrII9dD5qI6T9Gt5q92
+        nfZaR54iOhNvYb2+YCCqNYrucxugC67yN++HjOIA1nMiqjOK7l8r3o6KmiIbrud8VGMUPeGseCUqaoo8
+        cT03ohqj+FvoblTUFLnpeu5FNUbRs92Kp6Kipsh517MT1RhFC4sV34qKmiI3XM/dqMYoWtWs+GlU1BRZ
+        dj03oxqjaEm14q2oqCny2vVcjWqMosXFivUoHYsK6yJnsQ/reSmqM8oQtJ7bAN0Vg1FxP2QAb2C9dqI6
+        L/8oPoxkIS2sgzx0PWQ2qvPyD95koDXABuqn0MJS60wQHbl27h/B3zAc1XtHf/AmA71MWAPRwjLqB6SI
+        fnN/2j29X1yNxpniF95kkL4H6qh0VS9hFlpsruMxXsFfcBH9v3QSvRt4k8E6fJO6dNqj7aWT6NlgyBy0
+        nvtGZXagszOM9LXOaBJXevaTbvCILq4JzENL7B460K26iVUU7nNyDb9gO/Z+4nKh3n9pC5lB1SSm/9f6
+        gW0i/Sbx78yFg9tCqibxA+fCgW0iVZN4GQ5qGymbRCcccBxINImlsPi4kHGsQbcyT9Zs5C9TEafwUUV3
+        EwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnPesquisar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 361</value>
+  </data>
+  <data name="btnPesquisar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 62</value>
+  </data>
+  <data name="btnPesquisar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnPesquisar.Text" xml:space="preserve">
+    <value>&amp;Pesquisar</value>
+  </data>
+  <data name="btnPesquisar.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnPesquisar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisar.Name" xml:space="preserve">
+    <value>btnPesquisar</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ltbItensPesquisados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 175</value>
+  </data>
+  <data name="ltbItensPesquisados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>515, 147</value>
+  </data>
+  <data name="ltbItensPesquisados.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ltbItensPesquisados.Name" xml:space="preserve">
+    <value>ltbItensPesquisados</value>
+  </data>
+  <data name="&gt;&gt;ltbItensPesquisados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ltbItensPesquisados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ltbItensPesquisados.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtDescricao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 91</value>
+  </data>
+  <data name="txtDescricao.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="txtDescricao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="txtDescricao.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Name" xml:space="preserve">
+    <value>txtDescricao</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.Parent" xml:space="preserve">
+    <value>gpbPesquisar</value>
+  </data>
+  <data name="&gt;&gt;txtDescricao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDescricao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDescricao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 97</value>
+  </data>
+  <data name="lblDescricao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="lblDescricao.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblDescricao.Text" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="&gt;&gt;lblDescricao.Name" xml:space="preserve">
+    <value>lblDescricao</value>
+  </data>
+  <data name="&gt;&gt;lblDescricao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDescricao.Parent" xml:space="preserve">
+    <value>gpbPesquisar</value>
+  </data>
+  <data name="&gt;&gt;lblDescricao.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdbNome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 44</value>
+  </data>
+  <data name="rdbNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 24</value>
+  </data>
+  <data name="rdbNome.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rdbNome.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="&gt;&gt;rdbNome.Name" xml:space="preserve">
+    <value>rdbNome</value>
+  </data>
+  <data name="&gt;&gt;rdbNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbNome.Parent" xml:space="preserve">
+    <value>gpbPesquisar</value>
+  </data>
+  <data name="&gt;&gt;rdbNome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdbCodigo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 44</value>
+  </data>
+  <data name="rdbCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 24</value>
+  </data>
+  <data name="rdbCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rdbCodigo.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="&gt;&gt;rdbCodigo.Name" xml:space="preserve">
+    <value>rdbCodigo</value>
+  </data>
+  <data name="&gt;&gt;rdbCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbCodigo.Parent" xml:space="preserve">
+    <value>gpbPesquisar</value>
+  </data>
+  <data name="&gt;&gt;rdbCodigo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gpbPesquisar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="gpbPesquisar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="gpbPesquisar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 145</value>
+  </data>
+  <data name="gpbPesquisar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gpbPesquisar.Text" xml:space="preserve">
+    <value>Pesquisar por:</value>
+  </data>
+  <data name="&gt;&gt;gpbPesquisar.Name" xml:space="preserve">
+    <value>gpbPesquisar</value>
+  </data>
+  <data name="&gt;&gt;gpbPesquisar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpbPesquisar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpbPesquisar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnPesquisaFunc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPesquisaFunc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        1QAAANUBVNmqYgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKiSURBVFhH7dZJ
+        6E1RAMfxZ86UocxDhgxZWiBCiogQsiFDNkRkw8pU2Ch2iBQrKTMLM1F2VsYQG2WMhaHMfL+ve/4d5937
+        9+evV+r96tN799zzzj333HPOfaVaaqlimmafVU9znMIX7LGg2hmLh+iLt9lnYQbiDN7DHy1GY7MBL3EJ
+        szEcuWmNB/iRmI6/zSLYxhMMwwzcRDNUZBLSi+sY8tIEg+GoFeUAtqErlqE/lmAQKjINeR04jTT9cAOh
+        znX0RJoumIdrsN4zOCotUZEOsEJoNFiANJeR1juJNKuR1nuONsjNSNyHFT9iE9K0xTekDVu/BeK49rfj
+        M6zjHBuB36YHcoeJOIFcJWkHXsN5kRfvuDeKzpczGvZuPR7hAjpiDdIh24G0A5sRpx18fN1he5qTGYNf
+        4kVtZDdmZt93wsp+v41uCHGo/c0d3MJaxEurF+7C3c+OuAxtZyiuZN83opypsECP0R4+Mzvi1hnOnUMc
+        L9gp08qCKFcRfjcRh/AKPtYPCOcmo2JGu0bdtVwVTkiH7itewLtxvzgMH0uYC97EKoyDj835ENrzTlfg
+        OJzkoVwXUXoTFcjKNjQEu+AdHoXPbSnCCnC+2Og72Jmn8NxCxJvaPXSGe8JeuBsOwHnY0bqKQVjPKxHK
+        TsBd7FNUtgXuakcwKiuTy9EZ7wVCWTy3fBSOqvPD47pKgcPqM3UHDGXuXlujY7mnu8XOR3puHZZHx/sw
+        NzqO5RZ6B87icDweDndcRw6l73tXyazs+CwOYgpCvUZ3wCGOhzRwq/Vl5Pd4aH2MExDq1duB70mBGtqB
+        /fAdn5Y3tANeu/wPxaGLOax9omPnRFEHwmYVswP+vwi/dwX4DgnHQb3/jtL8aQf+eWw0vVBRB9z5aqnl
+        f0ip9BNNwDyWdRqf/wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnPesquisaFunc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 361</value>
+  </data>
+  <data name="btnPesquisaFunc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 62</value>
+  </data>
+  <data name="btnPesquisaFunc.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnPesquisaFunc.Text" xml:space="preserve">
+    <value>&amp;Pesquisa Func</value>
+  </data>
+  <data name="btnPesquisaFunc.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnPesquisaFunc.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisaFunc.Name" xml:space="preserve">
+    <value>btnPesquisaFunc</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisaFunc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisaFunc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisaFunc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnVoltar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVoltar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVFhH7dXJ
+        SgNBEMbxUdCDiA8SPYr6DIIYN8xF30Y8iT6DyyuJy0FBcUEvxu0gqP8PciiaTs846RQI88HvkDl01XRX
+        eoomTRJZwT2esaEHnungCz89T3BLWFwe4ZJYcf1exdCjMw+L1/GGM5xAszOGSrlFbMFBXaKN0twgtkAu
+        uxhF36jLHEeQoiaS2URsCCttYS8TmMUePmDXkmUkE2tCF1KdtHAFu9YFSgczbOIBI6iTaXzCNrGO0mjb
+        VVgW9WCA7MM2cAzXzME2oHvCNZOwDbzCNVOwDbzANfOwDbgfwQFsA0dwywzCv+EaXKLi17DFz1H5C1kn
+        mvgFaNvDN//GErJkG7qkbIEyO8iSccQ+NP3ozVU8+Tn+S3SG74gVC+nMs227zRbuEBbs4hSH0LQPdeCa
+        /PcUxS8PUOKfB2MqUQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnVoltar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 361</value>
+  </data>
+  <data name="btnVoltar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 62</value>
+  </data>
+  <data name="btnVoltar.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnVoltar.Text" xml:space="preserve">
+    <value>&amp;Voltar</value>
+  </data>
+  <data name="btnVoltar.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnVoltar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnVoltar.Name" xml:space="preserve">
+    <value>btnVoltar</value>
+  </data>
+  <data name="&gt;&gt;btnVoltar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVoltar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnVoltar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmPesquisaFunc</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmPesquisaFunc</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
