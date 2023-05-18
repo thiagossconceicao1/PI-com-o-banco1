@@ -34,31 +34,47 @@ namespace ProjetoPI
         {
             if (rdbCodigo.Checked)
             {
-                ltbItensPesquisados.Items.Clear();
-                ltbItensPesquisados.Items.Add(txtDescricao.Text);
-                pesquisaCodFunc(txtDescricao.Text);
-                MessageBox.Show("por favor selecione o codigo para pesquisar o funcionario", "Aviso do sistema",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error,
-                MessageBoxDefaultButton.Button1);
-                //Limpando a text
-                txtDescricao.Text = "";
-                
-
+                if (!(txtDescricao.Text == ""))
+                {
+                    ltbItensPesquisados.Items.Clear();
+                    ltbItensPesquisados.Items.Add(txtDescricao.Text);
+                    pesquisaCodFunc(txtDescricao.Text);
+                    //Limpando a text
+                    txtDescricao.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("por favor selecione o codigo para pesquisar o funcionario", "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button1);
+                }
             }
             else if (rdbNome.Checked)
             {
-                ltbItensPesquisados.Items.Clear();
-                ltbItensPesquisados.Items.Add(txtDescricao.Text);
-                pesquisaNome(txtDescricao.Text);
-                MessageBox.Show("por favor selecione o nome para pesquisar o funcionario", "Aviso do sistema",
+                if (!(txtDescricao.Text == ""))
+                {
+                    ltbItensPesquisados.Items.Clear();
+                    ltbItensPesquisados.Items.Add(txtDescricao.Text);
+                    pesquisaNome(txtDescricao.Text);
+                    //Limpando a text
+                    txtDescricao.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("por favor selecione o nome para pesquisar o funcionario", "Aviso do sistema",
                MessageBoxButtons.OK,
-               MessageBoxIcon.Error,
+               MessageBoxIcon.Warning,
                MessageBoxDefaultButton.Button1);
-                //Limpando a text
-                txtDescricao.Text = "";
+                }
             }
-            MessageBox.Show("Por favor selecione codigo ou nome para pesquisar o funcionario no sistema");   
+            else
+            {
+                MessageBox.Show("Por favor selecione codigo ou nome para pesquisar o funcionario no sistema", "Aviso do sistema",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button1);
+            }   
             }
         private void btnLimpar_Click(object sender, EventArgs e)
         {
@@ -192,17 +208,6 @@ namespace ProjetoPI
             frmfuncionarios abrir = new frmfuncionarios();
             abrir.Show();
             this.Hide();
-        }
-
-        private void txtDescricao_TextChanged(object sender, EventArgs e)
-        {
-
-            acessaBancoCod(txtDescricao.Text);
-            MessageBox.Show("O codigo não existe no Banco!!!",
-                "Aviso do sistema",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error,
-                MessageBoxDefaultButton.Button1);
         }
     }
 }

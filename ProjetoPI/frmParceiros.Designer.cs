@@ -30,7 +30,7 @@ namespace ProjetoPI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmParceiros));
-            this.gpbInfoMedico = new System.Windows.Forms.GroupBox();
+            this.gpbInfoParceiro = new System.Windows.Forms.GroupBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.lblComplemento = new System.Windows.Forms.Label();
             this.txtNum = new System.Windows.Forms.TextBox();
@@ -63,43 +63,43 @@ namespace ProjetoPI
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.gpbInfoMedico.SuspendLayout();
+            this.gpbInfoParceiro.SuspendLayout();
             this.pnlParceiros.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gpbInfoMedico
+            // gpbInfoParceiro
             // 
-            this.gpbInfoMedico.Controls.Add(this.txtComplemento);
-            this.gpbInfoMedico.Controls.Add(this.lblComplemento);
-            this.gpbInfoMedico.Controls.Add(this.txtNum);
-            this.gpbInfoMedico.Controls.Add(this.lblNum);
-            this.gpbInfoMedico.Controls.Add(this.mskCEP);
-            this.gpbInfoMedico.Controls.Add(this.txtCodigo);
-            this.gpbInfoMedico.Controls.Add(this.mskCNPJ);
-            this.gpbInfoMedico.Controls.Add(this.lblCPF);
-            this.gpbInfoMedico.Controls.Add(this.cbbEstado);
-            this.gpbInfoMedico.Controls.Add(this.lblEstado);
-            this.gpbInfoMedico.Controls.Add(this.txtCidade);
-            this.gpbInfoMedico.Controls.Add(this.lblCidade);
-            this.gpbInfoMedico.Controls.Add(this.txtBairro);
-            this.gpbInfoMedico.Controls.Add(this.lblBairro);
-            this.gpbInfoMedico.Controls.Add(this.lblCEP);
-            this.gpbInfoMedico.Controls.Add(this.txtEndereco);
-            this.gpbInfoMedico.Controls.Add(this.lblEndereco);
-            this.gpbInfoMedico.Controls.Add(this.mskTelefone);
-            this.gpbInfoMedico.Controls.Add(this.lblTelefon);
-            this.gpbInfoMedico.Controls.Add(this.lblCRM);
-            this.gpbInfoMedico.Controls.Add(this.txtNome);
-            this.gpbInfoMedico.Controls.Add(this.txtEmail);
-            this.gpbInfoMedico.Controls.Add(this.lblNome);
-            this.gpbInfoMedico.Controls.Add(this.lblEmail);
-            this.gpbInfoMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbInfoMedico.Location = new System.Drawing.Point(17, 12);
-            this.gpbInfoMedico.Name = "gpbInfoMedico";
-            this.gpbInfoMedico.Size = new System.Drawing.Size(732, 458);
-            this.gpbInfoMedico.TabIndex = 11;
-            this.gpbInfoMedico.TabStop = false;
-            this.gpbInfoMedico.Text = "Informações do Parceiro";
+            this.gpbInfoParceiro.Controls.Add(this.txtComplemento);
+            this.gpbInfoParceiro.Controls.Add(this.lblComplemento);
+            this.gpbInfoParceiro.Controls.Add(this.txtNum);
+            this.gpbInfoParceiro.Controls.Add(this.lblNum);
+            this.gpbInfoParceiro.Controls.Add(this.mskCEP);
+            this.gpbInfoParceiro.Controls.Add(this.txtCodigo);
+            this.gpbInfoParceiro.Controls.Add(this.mskCNPJ);
+            this.gpbInfoParceiro.Controls.Add(this.lblCPF);
+            this.gpbInfoParceiro.Controls.Add(this.cbbEstado);
+            this.gpbInfoParceiro.Controls.Add(this.lblEstado);
+            this.gpbInfoParceiro.Controls.Add(this.txtCidade);
+            this.gpbInfoParceiro.Controls.Add(this.lblCidade);
+            this.gpbInfoParceiro.Controls.Add(this.txtBairro);
+            this.gpbInfoParceiro.Controls.Add(this.lblBairro);
+            this.gpbInfoParceiro.Controls.Add(this.lblCEP);
+            this.gpbInfoParceiro.Controls.Add(this.txtEndereco);
+            this.gpbInfoParceiro.Controls.Add(this.lblEndereco);
+            this.gpbInfoParceiro.Controls.Add(this.mskTelefone);
+            this.gpbInfoParceiro.Controls.Add(this.lblTelefon);
+            this.gpbInfoParceiro.Controls.Add(this.lblCRM);
+            this.gpbInfoParceiro.Controls.Add(this.txtNome);
+            this.gpbInfoParceiro.Controls.Add(this.txtEmail);
+            this.gpbInfoParceiro.Controls.Add(this.lblNome);
+            this.gpbInfoParceiro.Controls.Add(this.lblEmail);
+            this.gpbInfoParceiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbInfoParceiro.Location = new System.Drawing.Point(17, 12);
+            this.gpbInfoParceiro.Name = "gpbInfoParceiro";
+            this.gpbInfoParceiro.Size = new System.Drawing.Size(771, 419);
+            this.gpbInfoParceiro.TabIndex = 11;
+            this.gpbInfoParceiro.TabStop = false;
+            this.gpbInfoParceiro.Text = "Informações do Parceiro";
             // 
             // txtComplemento
             // 
@@ -160,7 +160,7 @@ namespace ProjetoPI
             // mskCNPJ
             // 
             this.mskCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCNPJ.Location = new System.Drawing.Point(554, 237);
+            this.mskCNPJ.Location = new System.Drawing.Point(599, 237);
             this.mskCNPJ.Mask = "000,000,000-00";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(122, 26);
@@ -170,7 +170,7 @@ namespace ProjetoPI
             // 
             this.lblCPF.AutoSize = true;
             this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.Location = new System.Drawing.Point(552, 214);
+            this.lblCPF.Location = new System.Drawing.Point(597, 214);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(49, 20);
             this.lblCPF.TabIndex = 23;
@@ -264,7 +264,7 @@ namespace ProjetoPI
             // mskTelefone
             // 
             this.mskTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTelefone.Location = new System.Drawing.Point(548, 186);
+            this.mskTelefone.Location = new System.Drawing.Point(593, 186);
             this.mskTelefone.Mask = "(00) 00000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(133, 26);
@@ -274,7 +274,7 @@ namespace ProjetoPI
             // 
             this.lblTelefon.AutoSize = true;
             this.lblTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefon.Location = new System.Drawing.Point(545, 163);
+            this.lblTelefon.Location = new System.Drawing.Point(590, 163);
             this.lblTelefon.Name = "lblTelefon";
             this.lblTelefon.Size = new System.Drawing.Size(71, 20);
             this.lblTelefon.TabIndex = 10;
@@ -337,7 +337,7 @@ namespace ProjetoPI
             this.pnlParceiros.Controls.Add(this.btnExcluir);
             this.pnlParceiros.Controls.Add(this.btnAlterar);
             this.pnlParceiros.Controls.Add(this.btnCadastrar);
-            this.pnlParceiros.Location = new System.Drawing.Point(17, 497);
+            this.pnlParceiros.Location = new System.Drawing.Point(17, 437);
             this.pnlParceiros.Name = "pnlParceiros";
             this.pnlParceiros.Size = new System.Drawing.Size(771, 72);
             this.pnlParceiros.TabIndex = 16;
@@ -437,24 +437,24 @@ namespace ProjetoPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 572);
+            this.ClientSize = new System.Drawing.Size(800, 513);
             this.Controls.Add(this.pnlParceiros);
-            this.Controls.Add(this.gpbInfoMedico);
+            this.Controls.Add(this.gpbInfoParceiro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmParceiros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmParceiros";
             this.Load += new System.EventHandler(this.frmParceiros_Load);
-            this.gpbInfoMedico.ResumeLayout(false);
-            this.gpbInfoMedico.PerformLayout();
+            this.gpbInfoParceiro.ResumeLayout(false);
+            this.gpbInfoParceiro.PerformLayout();
             this.pnlParceiros.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox gpbInfoMedico;
+        private System.Windows.Forms.GroupBox gpbInfoParceiro;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label lblNum;
         private System.Windows.Forms.MaskedTextBox mskCEP;

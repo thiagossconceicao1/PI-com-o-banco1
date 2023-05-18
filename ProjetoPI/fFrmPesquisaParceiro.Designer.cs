@@ -50,7 +50,7 @@ namespace ProjetoPI
             this.btnPesquisaParceiro.Location = new System.Drawing.Point(45, 369);
             this.btnPesquisaParceiro.Name = "btnPesquisaParceiro";
             this.btnPesquisaParceiro.Size = new System.Drawing.Size(148, 62);
-            this.btnPesquisaParceiro.TabIndex = 16;
+            this.btnPesquisaParceiro.TabIndex = 5;
             this.btnPesquisaParceiro.Text = "&Pesquisa Parceiro";
             this.btnPesquisaParceiro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisaParceiro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -64,7 +64,7 @@ namespace ProjetoPI
             this.btnLimpar.Location = new System.Drawing.Point(233, 369);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(148, 62);
-            this.btnLimpar.TabIndex = 12;
+            this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -78,7 +78,7 @@ namespace ProjetoPI
             this.btnPesquisar.Location = new System.Drawing.Point(415, 369);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(148, 62);
-            this.btnPesquisar.TabIndex = 11;
+            this.btnPesquisar.TabIndex = 7;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -91,7 +91,7 @@ namespace ProjetoPI
             this.ltbItensPesquisados2.Location = new System.Drawing.Point(35, 176);
             this.ltbItensPesquisados2.Name = "ltbItensPesquisados2";
             this.ltbItensPesquisados2.Size = new System.Drawing.Size(515, 147);
-            this.ltbItensPesquisados2.TabIndex = 13;
+            this.ltbItensPesquisados2.TabIndex = 4;
             this.ltbItensPesquisados2.SelectedIndexChanged += new System.EventHandler(this.ltbItensPesquisados_SelectedIndexChanged);
             // 
             // gpbPesquisar
@@ -106,7 +106,7 @@ namespace ProjetoPI
             this.gpbPesquisar.Size = new System.Drawing.Size(517, 145);
             this.gpbPesquisar.TabIndex = 14;
             this.gpbPesquisar.TabStop = false;
-            this.gpbPesquisar.Text = "Pesquisar por:";
+            this.gpbPesquisar.Text = "Pesquisar por Funcionários:";
             // 
             // txtDescricao
             // 
@@ -114,7 +114,7 @@ namespace ProjetoPI
             this.txtDescricao.MaxLength = 50;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(382, 26);
-            this.txtDescricao.TabIndex = 0;
+            this.txtDescricao.TabIndex = 2;
             // 
             // lblDescricao
             // 
@@ -131,7 +131,7 @@ namespace ProjetoPI
             this.rdbNome.Location = new System.Drawing.Point(200, 44);
             this.rdbNome.Name = "rdbNome";
             this.rdbNome.Size = new System.Drawing.Size(69, 24);
-            this.rdbNome.TabIndex = 2;
+            this.rdbNome.TabIndex = 1;
             this.rdbNome.TabStop = true;
             this.rdbNome.Text = "Nome";
             this.rdbNome.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace ProjetoPI
             this.rdbCodigo.Location = new System.Drawing.Point(42, 44);
             this.rdbCodigo.Name = "rdbCodigo";
             this.rdbCodigo.Size = new System.Drawing.Size(77, 24);
-            this.rdbCodigo.TabIndex = 1;
+            this.rdbCodigo.TabIndex = 0;
             this.rdbCodigo.TabStop = true;
             this.rdbCodigo.Text = "Código";
             this.rdbCodigo.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@ namespace ProjetoPI
             this.btnVoltar.Location = new System.Drawing.Point(599, 369);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(148, 62);
-            this.btnVoltar.TabIndex = 17;
+            this.btnVoltar.TabIndex = 8;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -174,9 +174,10 @@ namespace ProjetoPI
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.ltbItensPesquisados2);
             this.Controls.Add(this.gpbPesquisar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fFrmPesquisaParceiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aqui seu lixo - Pesquisar funcionário";
+            this.Text = "Pesquisa funcionários - Aqui seu lixo";
             this.gpbPesquisar.ResumeLayout(false);
             this.gpbPesquisar.PerformLayout();
             this.ResumeLayout(false);

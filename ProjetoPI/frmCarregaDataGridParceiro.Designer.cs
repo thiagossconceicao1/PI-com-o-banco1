@@ -29,6 +29,7 @@ namespace ProjetoPI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarregaDataGridParceiro));
             this.btnVoltar = new System.Windows.Forms.Button();
             this.dgvParceiros = new System.Windows.Forms.DataGridView();
             this.btnCarregaDados = new System.Windows.Forms.Button();
@@ -37,20 +38,23 @@ namespace ProjetoPI
             // 
             // btnVoltar
             // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnVoltar.Location = new System.Drawing.Point(643, 359);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 55);
-            this.btnVoltar.TabIndex = 10;
+            this.btnVoltar.TabIndex = 1;
             this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // dgvParceiros
             // 
             this.dgvParceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvParceiros.Location = new System.Drawing.Point(12, 24);
+            this.dgvParceiros.Location = new System.Drawing.Point(12, 12);
             this.dgvParceiros.Name = "dgvParceiros";
-            this.dgvParceiros.Size = new System.Drawing.Size(773, 317);
+            this.dgvParceiros.Size = new System.Drawing.Size(773, 329);
             this.dgvParceiros.TabIndex = 9;
             // 
             // btnCarregaDados
@@ -58,7 +62,7 @@ namespace ProjetoPI
             this.btnCarregaDados.Location = new System.Drawing.Point(287, 359);
             this.btnCarregaDados.Name = "btnCarregaDados";
             this.btnCarregaDados.Size = new System.Drawing.Size(210, 55);
-            this.btnCarregaDados.TabIndex = 8;
+            this.btnCarregaDados.TabIndex = 0;
             this.btnCarregaDados.Text = "Carrega Dados";
             this.btnCarregaDados.UseVisualStyleBackColor = true;
             this.btnCarregaDados.Click += new System.EventHandler(this.btnCarregaDados_Click);
@@ -67,12 +71,14 @@ namespace ProjetoPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 454);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dgvParceiros);
             this.Controls.Add(this.btnCarregaDados);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCarregaDataGridParceiro";
-            this.Text = "frmCarregaDataGridParceiro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Visualiza Parceiros - Aqui Seu Lixo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvParceiros)).EndInit();
             this.ResumeLayout(false);
 

@@ -16,7 +16,7 @@ namespace ProjetoPI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPesquisaFunc());
+            Application.Run(new frmSplash());
         }
     }
 }

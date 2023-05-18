@@ -40,7 +40,7 @@ namespace ProjetoPI
             // 
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(677, 417);
+            this.btnVoltar.Location = new System.Drawing.Point(653, 353);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 58);
             this.btnVoltar.TabIndex = 3;
@@ -54,10 +54,10 @@ namespace ProjetoPI
             this.btnLocalizacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizacao.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizacao.Image")));
-            this.btnLocalizacao.Location = new System.Drawing.Point(290, 150);
+            this.btnLocalizacao.Location = new System.Drawing.Point(289, 120);
             this.btnLocalizacao.Name = "btnLocalizacao";
             this.btnLocalizacao.Size = new System.Drawing.Size(196, 163);
-            this.btnLocalizacao.TabIndex = 2;
+            this.btnLocalizacao.TabIndex = 1;
             this.btnLocalizacao.Text = "Localização";
             this.btnLocalizacao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLocalizacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -69,11 +69,11 @@ namespace ProjetoPI
             this.btnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
-            this.btnFuncionarios.Location = new System.Drawing.Point(88, 150);
+            this.btnFuncionarios.Location = new System.Drawing.Point(87, 120);
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Size = new System.Drawing.Size(196, 163);
             this.btnFuncionarios.TabIndex = 0;
-            this.btnFuncionarios.Text = "Funcionarios";
+            this.btnFuncionarios.Text = "Funcionários";
             this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFuncionarios.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@ namespace ProjetoPI
             this.btnParceiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnParceiros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParceiros.Image = ((System.Drawing.Image)(resources.GetObject("btnParceiros.Image")));
-            this.btnParceiros.Location = new System.Drawing.Point(492, 150);
+            this.btnParceiros.Location = new System.Drawing.Point(491, 120);
             this.btnParceiros.Name = "btnParceiros";
             this.btnParceiros.Size = new System.Drawing.Size(196, 163);
-            this.btnParceiros.TabIndex = 1;
+            this.btnParceiros.TabIndex = 2;
             this.btnParceiros.Text = "Parceiros";
             this.btnParceiros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnParceiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -98,7 +98,7 @@ namespace ProjetoPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 502);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnLocalizacao);
             this.Controls.Add(this.btnFuncionarios);

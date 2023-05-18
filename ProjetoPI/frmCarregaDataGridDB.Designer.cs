@@ -49,18 +49,21 @@ namespace ProjetoPI
             this.btnCarregaDados.Location = new System.Drawing.Point(290, 347);
             this.btnCarregaDados.Name = "btnCarregaDados";
             this.btnCarregaDados.Size = new System.Drawing.Size(210, 55);
-            this.btnCarregaDados.TabIndex = 2;
+            this.btnCarregaDados.TabIndex = 0;
             this.btnCarregaDados.Text = "Carrega Dados";
             this.btnCarregaDados.UseVisualStyleBackColor = true;
             this.btnCarregaDados.Click += new System.EventHandler(this.btnCarregaDados_Click);
             // 
             // btnVoltar
             // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnVoltar.Location = new System.Drawing.Point(646, 347);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 55);
-            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.TabIndex = 1;
             this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -76,7 +79,7 @@ namespace ProjetoPI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCarregaDataGridDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aqui seu lixo ";
+            this.Text = "Visualiza Funcionários - Aqui seu lixo ";
             this.Load += new System.EventHandler(this.frmCarregaDataGridDB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);

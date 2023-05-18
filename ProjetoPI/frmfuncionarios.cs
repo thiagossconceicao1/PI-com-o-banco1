@@ -49,13 +49,15 @@ namespace ProjetoPI
         public void desabilitaCampos()
         {
             txtCodigo.Enabled = false;
-            txtNome.Enabled = false;
             txtCargo.Enabled = false;
+            txtNome.Enabled = false;
+            txtSenha.Enabled = false;
             txtEmail.Enabled = false;
             txtEndereco.Enabled = false;
             mskTelefone.Enabled = false;
             mskCPF.Enabled = false;
             mskCEP.Enabled = false;
+            txtEstado.Enabled = false;
             cbbEstado.Enabled = false;
             txtCidade.Enabled = false;
             txtBairro.Enabled = false;
@@ -71,13 +73,15 @@ namespace ProjetoPI
         }
         public void habilitarCampos()
         {
-            txtNome.Enabled = true;
             txtCargo.Enabled = true;
+            txtNome.Enabled = true;
+            txtSenha.Enabled = true;
             txtEmail.Enabled = true;
             txtEndereco.Enabled = true;
             mskTelefone.Enabled = true;
             mskCPF.Enabled = true;
             mskCEP.Enabled = true;
+            txtEstado.Enabled = true;
             cbbEstado.Enabled = true;
             txtCidade.Enabled = true;
             txtBairro.Enabled = true;
@@ -90,17 +94,19 @@ namespace ProjetoPI
             btnPesquisar.Enabled = true;
             btnLimpar.Enabled = true;
             btnVoltar.Enabled = true;
-            txtNome.Focus();
+            txtCargo.Focus();
         }
         public void limparCampos()
         {
-            txtNome.Text = "";
             txtCargo.Text = "";
+            txtNome.Text = "";
+            txtSenha.Text = "";
             txtEmail.Text = "";
             txtEndereco.Text = "";
             mskTelefone.Text = "";
             mskCPF.Text = "";
             mskCEP.Text = "";
+            txtEstado.Text = "";
             cbbEstado.Text = "";
             txtCidade.Text = "";
             txtBairro.Text = "";
@@ -114,11 +120,13 @@ namespace ProjetoPI
             txtCodigo.Enabled = false;
             txtNome.Enabled = false;
             txtCargo.Enabled = false;
+            txtSenha.Enabled = false;
             txtEmail.Enabled = false;
             txtEndereco.Enabled = false;
             mskTelefone.Enabled = false;
             mskCPF.Enabled = false;
             mskCEP.Enabled = false;
+            txtEstado.Enabled = false;
             cbbEstado.Enabled = false;
             txtCidade.Enabled = false;
             txtBairro.Enabled = false;
@@ -152,7 +160,7 @@ namespace ProjetoPI
         public void pesquisarCampo(string cargo)
         {
             MySqlCommand comm = new MySqlCommand();
-            comm.CommandText = "select * from tbFuncionarios where cargo = '" + cargo + "';";
+            comm.CommandText = "select * from tbfuncionarios where cargo = '" + cargo + "';";
             comm.CommandType = CommandType.Text;
 
             comm.Connection = Conexao.obterConexao();
@@ -164,16 +172,18 @@ namespace ProjetoPI
             txtCodigo.Text = Convert.ToString(DR.GetInt32(0));
             txtCargo.Text = DR.GetString(1);
             txtNome.Text = DR.GetString(2);
-            txtEmail.Text = DR.GetString(3);
-            txtEndereco.Text = DR.GetString(4);
-            mskTelefone.Text = DR.GetString(5);
-            mskCPF.Text = DR.GetString(6);
-            mskCEP.Text = DR.GetString(7);
-            cbbEstado.Text = DR.GetString(8);
-            txtCidade.Text = DR.GetString(9);
-            txtBairro.Text = DR.GetString(10);
-            txtNum.Text = DR.GetString(11);
-            txtComplemento.Text = DR.GetString(12);
+            txtSenha.Text = DR.GetString(3);
+            txtEmail.Text = DR.GetString(4);
+            txtEndereco.Text = DR.GetString(5);
+            mskTelefone.Text = DR.GetString(6);
+            mskCPF.Text = DR.GetString(7);
+            mskCEP.Text = DR.GetString(8);
+            txtEstado.Text = DR.GetString(9);
+            cbbEstado.Text = DR.GetString(10);
+            txtCidade.Text = DR.GetString(11);
+            txtBairro.Text = DR.GetString(12);
+            txtNum.Text = DR.GetString(13);
+            txtComplemento.Text = DR.GetString(14);
 
             Conexao.fecharConexao();
         }
@@ -220,21 +230,24 @@ namespace ProjetoPI
         {
             MySqlCommand comm = new MySqlCommand();
 
-            comm.CommandText = "insert into tbFuncionarios(cargo, nome, email, endereco, telefone, cpf, cep, siglaEst, cidade, bairro, numero, complemento)" +
-    "values(@cargo, @nome, @email, @endereco, @telefone, @cpf, @cep, @siglaEst, @cidade, @bairro, @numero, @complemento); ";
+            comm.CommandText = "insert into tbFuncionarios(cargo, nome, senha, email, endereco, telefone, cpf, cep, estado, siglaEst, cidade, bairro, numero, complemento)" +
+    "values(@cargo, @nome, @senha, @email, @endereco, @telefone, @cpf, @cep, @estado, @siglaEst, @cidade, @bairro, @numero, @complemento); ";
 
             comm.CommandType = CommandType.Text;
 
             comm.Parameters.Clear();
 
+            //comm.Parameters.Add("@codfunc", MySqlDbType.)
             comm.Parameters.Add("@cargo", MySqlDbType.VarChar, 100).Value = txtCargo.Text;
             comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = txtNome.Text;
+            comm.Parameters.Add("@senha", MySqlDbType.VarChar, 18).Value = txtSenha.Text;
             comm.Parameters.Add("@email", MySqlDbType.VarChar, 100).Value = txtEmail.Text;
             comm.Parameters.Add("@endereco", MySqlDbType.VarChar, 100).Value = txtEndereco.Text;
             comm.Parameters.Add("@telefone", MySqlDbType.VarChar, 20).Value = mskTelefone.Text;
             comm.Parameters.Add("@cpf", MySqlDbType.VarChar, 14).Value = mskCPF.Text;
+            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 10).Value = mskCEP.Text;
+            comm.Parameters.Add("estado", MySqlDbType.VarChar, 20).Value = txtEstado.Text;
             comm.Parameters.Add("@siglaEst", MySqlDbType.VarChar, 2).Value = cbbEstado.Text;
-            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 10).Value = mskCEP.Text;   
             comm.Parameters.Add("@cidade", MySqlDbType.VarChar, 50).Value = txtCidade.Text;
             comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 50).Value = txtBairro.Text;
             comm.Parameters.Add("@numero", MySqlDbType.VarChar, 14).Value = txtNum.Text;
@@ -246,7 +259,7 @@ namespace ProjetoPI
 
             int i = comm.ExecuteNonQuery();
 
-            MessageBox.Show("Funcionario cadastrado com sucesso!!!" + i);
+            MessageBox.Show("Funcionario cadastrado com sucesso!!!" + "i");
             limparCampos();
             desabilitaCampos();
 
@@ -269,7 +282,7 @@ namespace ProjetoPI
 
             if ( txtCargo.Text.Equals("") || txtNome.Text.Equals("") || txtEmail.Text.Equals("")
               || txtEndereco.Text.Equals("") || mskTelefone.Text.Equals("(  )      -")
-                || mskCPF.Text.Equals("   .   .   -") || mskCEP.Text.Equals("     -")
+                || mskCPF.Text.Equals("   .   .   -") || txtEstado.Text.Equals("") || mskCEP.Text.Equals("     -")
                 || txtCidade.Text.Equals("") || txtBairro.Text.Equals("") ||
                 txtNum.Text.Equals("") || cbbEstado.Text.Equals(""))
             {
@@ -286,20 +299,22 @@ namespace ProjetoPI
         public void alterarFuncionario(int codFunc)
         {
             MySqlCommand comm = new MySqlCommand();
-            comm.CommandText = "update tbFuncionarios set cargo = @cargo , nome = @nome, email = @email, telefone = @telefone,endereco = @endereco, cpf = @cpf, siglaEst = @siglaEst, cep = @cep, cidade = @cidade, bairro = @bairro, numero = @numero, complemento = @complemento where codFunc = " + codFunc + ";";
+            comm.CommandText = "update tbFuncionarios set cargo = @cargo , nome = @nome, senha = @senha, email = @email, telefone = @telefone,endereco = @endereco, cpf = @cpf, estado = @estado, siglaEst = @siglaEst, cep = @cep, cidade = @cidade, bairro = @bairro, numero = @numero, complemento = @complemento where codFunc = " + codFunc + ";";
             comm.CommandType = CommandType.Text;
             comm.Connection = Conexao.obterConexao();
 
             comm.Parameters.Clear();
 
-            comm.Parameters.Add("@cargo", MySqlDbType.VarChar, 100).Value = txtNome.Text;
+            comm.Parameters.Add("@cargo", MySqlDbType.VarChar, 100).Value = txtCargo.Text;
             comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = txtNome.Text;
+            comm.Parameters.Add("@senha", MySqlDbType.VarChar, 18).Value = txtSenha.Text;
             comm.Parameters.Add("@email", MySqlDbType.VarChar, 100).Value = txtEmail.Text;
             comm.Parameters.Add("@endereco", MySqlDbType.VarChar, 100).Value = txtEndereco.Text;
             comm.Parameters.Add("@telefone", MySqlDbType.VarChar, 20).Value = mskTelefone.Text;
             comm.Parameters.Add("@cpf", MySqlDbType.VarChar, 14).Value = mskCPF.Text;
-            comm.Parameters.Add("@siglaEst", MySqlDbType.VarChar, 2).Value = cbbEstado.Text;
             comm.Parameters.Add("@cep", MySqlDbType.VarChar, 10).Value = mskCEP.Text;
+            comm.Parameters.Add("estado", MySqlDbType.VarChar, 20).Value = txtEstado.Text;
+            comm.Parameters.Add("@siglaEst", MySqlDbType.VarChar, 2).Value = cbbEstado.Text;
             comm.Parameters.Add("@cidade", MySqlDbType.VarChar, 50).Value = txtCidade.Text;
             comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 50).Value = txtBairro.Text;
             comm.Parameters.Add("@numero", MySqlDbType.VarChar, 14).Value = txtNum.Text;
@@ -363,6 +378,7 @@ namespace ProjetoPI
                 txtEndereco.Text = end.end;
                 txtBairro.Text = end.bairro;
                 txtCidade.Text = end.cidade;
+                txtEstado.Text = end.cidade;
                 cbbEstado.Text = end.uf;
             }
             catch (Exception)

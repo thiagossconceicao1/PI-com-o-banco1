@@ -50,9 +50,9 @@ namespace ProjetoPI
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            string senha;
+            string senha, funcionario;
 
-            string funcionario = txtUsuario.Text;
+            funcionario = txtUsuario.Text;
             senha = txtSenha.Text;
 
             bool validar = acessarSistema(funcionario, senha);

@@ -62,7 +62,7 @@ namespace ProjetoPI
             this.txtComplemento.MaxLength = 50;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(157, 26);
-            this.txtComplemento.TabIndex = 32;
+            this.txtComplemento.TabIndex = 6;
             // 
             // lblComplemento
             // 
@@ -81,7 +81,7 @@ namespace ProjetoPI
             this.txtNum.MaxLength = 10;
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(91, 26);
-            this.txtNum.TabIndex = 30;
+            this.txtNum.TabIndex = 5;
             // 
             // lblNum
             // 
@@ -99,7 +99,7 @@ namespace ProjetoPI
             this.cbbEstado.Location = new System.Drawing.Point(555, 171);
             this.cbbEstado.Name = "cbbEstado";
             this.cbbEstado.Size = new System.Drawing.Size(75, 21);
-            this.cbbEstado.TabIndex = 35;
+            this.cbbEstado.TabIndex = 7;
             // 
             // lblEstado
             // 
@@ -118,7 +118,7 @@ namespace ProjetoPI
             this.txtCidade.MaxLength = 50;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(151, 26);
-            this.txtCidade.TabIndex = 34;
+            this.txtCidade.TabIndex = 2;
             // 
             // lblCidade
             // 
@@ -137,13 +137,13 @@ namespace ProjetoPI
             this.txtBairro.MaxLength = 50;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(215, 26);
-            this.txtBairro.TabIndex = 33;
+            this.txtBairro.TabIndex = 4;
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(36, 149);
+            this.lblBairro.Location = new System.Drawing.Point(31, 149);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(51, 20);
             this.lblBairro.TabIndex = 37;
@@ -166,13 +166,13 @@ namespace ProjetoPI
             this.txtEndereco.MaxLength = 100;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(424, 26);
-            this.txtEndereco.TabIndex = 42;
+            this.txtEndereco.TabIndex = 1;
             // 
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.Location = new System.Drawing.Point(35, 93);
+            this.lblEndereco.Location = new System.Drawing.Point(31, 94);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(78, 20);
             this.lblEndereco.TabIndex = 43;
@@ -187,7 +187,7 @@ namespace ProjetoPI
             this.pnlParceiros.Controls.Add(this.btnExcluir);
             this.pnlParceiros.Controls.Add(this.btnAlterar);
             this.pnlParceiros.Controls.Add(this.btnCadastrar);
-            this.pnlParceiros.Location = new System.Drawing.Point(21, 484);
+            this.pnlParceiros.Location = new System.Drawing.Point(17, 259);
             this.pnlParceiros.Name = "pnlParceiros";
             this.pnlParceiros.Size = new System.Drawing.Size(771, 80);
             this.pnlParceiros.TabIndex = 44;
@@ -198,7 +198,7 @@ namespace ProjetoPI
             this.btnLimpar.Location = new System.Drawing.Point(554, 17);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 43);
-            this.btnLimpar.TabIndex = 19;
+            this.btnLimpar.TabIndex = 13;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -208,10 +208,10 @@ namespace ProjetoPI
             // btnNovo
             // 
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
-            this.btnNovo.Location = new System.Drawing.Point(7, 17);
+            this.btnNovo.Location = new System.Drawing.Point(14, 17);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(96, 43);
-            this.btnNovo.TabIndex = 14;
+            this.btnNovo.TabIndex = 8;
             this.btnNovo.Text = "&Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -224,7 +224,7 @@ namespace ProjetoPI
             this.btnVoltar.Location = new System.Drawing.Point(666, 17);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(96, 43);
-            this.btnVoltar.TabIndex = 20;
+            this.btnVoltar.TabIndex = 14;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -237,7 +237,7 @@ namespace ProjetoPI
             this.btnPesquisar.Location = new System.Drawing.Point(439, 17);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(96, 43);
-            this.btnPesquisar.TabIndex = 18;
+            this.btnPesquisar.TabIndex = 12;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -250,7 +250,7 @@ namespace ProjetoPI
             this.btnExcluir.Location = new System.Drawing.Point(327, 17);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(96, 43);
-            this.btnExcluir.TabIndex = 17;
+            this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "E&xcluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,7 +263,7 @@ namespace ProjetoPI
             this.btnAlterar.Location = new System.Drawing.Point(218, 17);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(96, 43);
-            this.btnAlterar.TabIndex = 16;
+            this.btnAlterar.TabIndex = 10;
             this.btnAlterar.Text = "&Alterar";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -276,7 +276,7 @@ namespace ProjetoPI
             this.btnCadastrar.Location = new System.Drawing.Point(114, 17);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(96, 43);
-            this.btnCadastrar.TabIndex = 15;
+            this.btnCadastrar.TabIndex = 9;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -288,14 +288,14 @@ namespace ProjetoPI
             this.mskCEP.Mask = "00000-000";
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(60, 20);
-            this.mskCEP.TabIndex = 21;
+            this.mskCEP.TabIndex = 0;
             this.mskCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCEP_KeyDown);
             // 
             // frmLocalizacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 576);
+            this.ClientSize = new System.Drawing.Size(800, 406);
             this.Controls.Add(this.mskCEP);
             this.Controls.Add(this.pnlParceiros);
             this.Controls.Add(this.txtEndereco);
@@ -315,7 +315,7 @@ namespace ProjetoPI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLocalizacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLocalizacao";
+            this.Text = "Verifica Localização - Aqui Seu Lixo";
             this.Load += new System.EventHandler(this.frmLocalizacao_Load);
             this.pnlParceiros.ResumeLayout(false);
             this.ResumeLayout(false);

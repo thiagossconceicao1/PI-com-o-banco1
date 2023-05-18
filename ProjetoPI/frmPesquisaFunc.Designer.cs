@@ -78,7 +78,7 @@ namespace ProjetoPI
             // 
             resources.ApplyResources(this.txtDescricao, "txtDescricao");
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.TextChanged += new System.EventHandler(this.txtDescricao_TextChanged);
+            this.txtDescricao.TabStop = false;
             // 
             // lblDescricao
             // 
@@ -89,7 +89,6 @@ namespace ProjetoPI
             // 
             resources.ApplyResources(this.rdbNome, "rdbNome");
             this.rdbNome.Name = "rdbNome";
-            this.rdbNome.TabStop = true;
             this.rdbNome.UseVisualStyleBackColor = true;
             this.rdbNome.CheckedChanged += new System.EventHandler(this.rdbNome_CheckedChanged);
             // 
@@ -97,7 +96,6 @@ namespace ProjetoPI
             // 
             resources.ApplyResources(this.rdbCodigo, "rdbCodigo");
             this.rdbCodigo.Name = "rdbCodigo";
-            this.rdbCodigo.TabStop = true;
             this.rdbCodigo.UseVisualStyleBackColor = true;
             this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
             // 

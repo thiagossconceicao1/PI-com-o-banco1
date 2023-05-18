@@ -65,7 +65,7 @@ namespace ProjetoPI
             this.btnPesquisaFunc.Name = "btnPesquisaFunc";
             this.btnPesquisaFunc.Size = new System.Drawing.Size(148, 62);
             this.btnPesquisaFunc.TabIndex = 23;
-            this.btnPesquisaFunc.Text = "&Pesquisa Loc";
+            this.btnPesquisaFunc.Text = "&Pesquisa Localização";
             this.btnPesquisaFunc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisaFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPesquisaFunc.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@ namespace ProjetoPI
             this.gpbPesquisar.Size = new System.Drawing.Size(517, 145);
             this.gpbPesquisar.TabIndex = 22;
             this.gpbPesquisar.TabStop = false;
-            this.gpbPesquisar.Text = "Pesquisar por:";
+            this.gpbPesquisar.Text = "Pesquisar pela Localização:";
             // 
             // txtDescricao
             // 
@@ -156,10 +156,10 @@ namespace ProjetoPI
             this.rdbCodigo.AutoSize = true;
             this.rdbCodigo.Location = new System.Drawing.Point(42, 44);
             this.rdbCodigo.Name = "rdbCodigo";
-            this.rdbCodigo.Size = new System.Drawing.Size(77, 24);
+            this.rdbCodigo.Size = new System.Drawing.Size(59, 24);
             this.rdbCodigo.TabIndex = 1;
             this.rdbCodigo.TabStop = true;
-            this.rdbCodigo.Text = "Código";
+            this.rdbCodigo.Text = "CEP";
             this.rdbCodigo.UseVisualStyleBackColor = true;
             this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
             // 
@@ -175,9 +175,10 @@ namespace ProjetoPI
             this.Controls.Add(this.ltbItensPesquisados);
             this.Controls.Add(this.gpbPesquisar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPesquisaLoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPesquisaLoc";
+            this.Text = "Pesquisa Localização - Aqui Seu Lixo";
             this.gpbPesquisar.ResumeLayout(false);
             this.gpbPesquisar.PerformLayout();
             this.ResumeLayout(false);
